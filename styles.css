@@ -304,3 +304,135 @@ ul {
     width: 100px; /* Resize image for smaller screens */
   }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  header p {
+    padding: 10px 0;
+  }
+
+  /* Background Image Section */
+  .bgimage {
+    height: 50vh;
+    padding-top: 100px;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding-top: 50px;
+  }
+
+  /* About Section */
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+  }
+
+  .about-text {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .about-text h1 {
+    text-align: center;
+  }
+
+  .about-text p {
+    text-align: center;
+    margin: 0;
+  }
+
+  /* Skills Section */
+  .skills ul {
+    padding: 0 20px;
+  }
+
+  .skills li {
+    font-size: 1em;
+  }
+
+  /* Experience Section */
+  .experience h2,
+  .experience p,
+  .experience ul {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Projects Section */
+  .project1,
+  .project2,
+  .project3 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image1,
+  .image2 {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px;
+  }
+
+  .project1-text,
+  .project2-text,
+  .project3-text {
+    padding: 0 20px;
+  }
+
+  .project1-text ul,
+  .project2-text ul,
+  .project3-text ul {
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+
+/* For even smaller screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-text p {
+    font-size: 1em;
+  }
+
+  .skills li {
+    font-size: 0.9em;
+  }
+}
+
+/* For larger screens */
+@media (min-width: 1200px) {
+  .about-section,
+  .project1,
+  .project2,
+  .project3 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .skills ul {
+    max-width: 1000px;
+  }
+}
