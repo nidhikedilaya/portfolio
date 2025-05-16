@@ -436,3 +436,43 @@ ul {
     max-width: 1000px;
   }
 }
+
+/* Sliding Animation Styles */
+.slide-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Apply to all text elements except footer */
+h1:not(footer h1),
+h2:not(footer h2),
+p:not(footer p),
+li:not(footer li),
+.about-text,
+.skills li,
+.experience h2,
+.experience p,
+.project-text {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+h1:not(footer h1).active,
+h2:not(footer h2).active,
+p:not(footer p).active,
+li:not(footer li).active,
+.about-text.active,
+.skills li.active,
+.experience h2.active,
+.experience p.active,
+.project-text.active {
+  opacity: 1;
+  transform: translateY(0);
+}
